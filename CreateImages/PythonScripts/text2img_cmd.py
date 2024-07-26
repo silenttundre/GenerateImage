@@ -2,8 +2,6 @@ import requests
 import os
 import sys
 
-EXIT_LOOP = ['quit','exit']
-
 access_token = os.environ.get("HUGGING_FACE_KEY")
 input_text = sys.argv[1]
 
