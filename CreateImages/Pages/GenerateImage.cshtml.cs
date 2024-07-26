@@ -25,7 +25,7 @@ namespace CreateImages.Pages
 
         private static void DoPython(string inputText)
         {
-            string cmd = "C:\\Users\\EarthVina\\PycharmProjects\\UsingHuggingFaceModel\\text2img_cmd.py";
+            string cmd = "PythonScripts\\text2img_cmd.py";
             RunCommand(cmd, inputText);
         }
 
