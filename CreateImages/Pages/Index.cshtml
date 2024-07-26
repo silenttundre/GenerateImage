@@ -1,0 +1,43 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<form method="POST">
+<div class="text-center">
+    <h1 class="display-4">Welcome to Image Generator</h1>
+    <p></p>
+    <center>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="10" style="text-align: center"><div id="picture"><img src="images/gen_img.jpg" height="500" width="500" /></div></th>
+            </tr>
+        </thead>
+        <tdboy>
+            <tr><td><label font="bold">Type a sentence:</label></td></tr>
+            <tr><td><input name="input_text" type="text" value="" size="100" /></td></tr>
+                <tr>
+                    <td>
+                        <!-- <a class='btn btn-primary btn-sm' href='#' onclick="load_gen_img()">Generate</a>
+                            -->
+                        <button type="submit" class="btn btn-primary" onclick="status()">Generate</button>
+                    </td>
+                </tr>
+        </tdboy>
+        
+    </table>
+    </center>
+</div>
+</form>
+<p></p>
+<center><div id="status" style="font-weight: bold;"></div></center>
+
+<script>
+    function status()
+    {
+        document.getElementById('status').innerHTML = 'Generating image now...Please wait...';
+    }
+</script>
+
+

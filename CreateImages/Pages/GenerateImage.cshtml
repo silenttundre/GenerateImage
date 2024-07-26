@@ -1,0 +1,16 @@
+﻿@page
+@model CreateImages.Pages.GenerateImageModel
+@{
+}
+
+<br>
+
+@if (Model.page_input.Length > 0)
+{
+    <h5>Text to generate image:</h5>
+    <h2 name="inputText"> @Model.page_input</h2>
+}
+<br />
+<a href="Index">Back to Home</a>
+<br />
+<div id="picture"><img src="images/gen_img.jpg" height="800" width="800" /></div>
