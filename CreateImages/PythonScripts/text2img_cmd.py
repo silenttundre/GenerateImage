@@ -2,9 +2,10 @@ import requests
 import os
 import sys
 
-access_token = os.environ.get("HUGGING_FACE_KEY")
+access_token = "<HUGGING_FACE_ACCESS_TOKEN>"
 input_text = sys.argv[1]
 
+# Different Huggingface models to try
 #API_URL = "https://api-inference.huggingface.co/models/alvdansen/littletinies"
 #API_URL = "https://api-inference.huggingface.co/models/cagliostrolab/animagine-xl-3.1"
 API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-3-medium-diffusers"
